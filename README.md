@@ -16,10 +16,11 @@ Add [this Chrome Extension](https://chrome.google.com/webstore/detail/cypress-ch
 ## Usage
 
 1. Clone the repo
-2. Visit chrome://extensions
-3. Enable "Developer mode" via toggle switch in upper right corner
-4. Click "Load unpacked" button in upper left corner
-5. Select the previously cloned directory
+2. Build the repo `pnpm build`
+3. Visit chrome://extensions
+4. Enable "Developer mode" via toggle switch in upper right corner
+5. Click "Load unpacked" button in upper left corner
+6. Select the `build` dir in the previously cloned directory
 
 ## Thanks
 

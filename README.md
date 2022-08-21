@@ -1,5 +1,7 @@
 # Chrome DevTools Playwright Exporter Extension
 
+**WIP** Currenlty trying to find a way to run codemods in a browser context
+
 <img width="1009" alt="export-as-cypress" src="https://user-images.githubusercontent.com/5917927/185565270-2f3e9b34-4432-46a3-bafb-0cfe2e53377b.png">
 
 ---

@@ -1,4 +1,5 @@
 import { nodeResolve } from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
 
 export default {
   input: 'src/DevToolsPlugin.js',
@@ -7,6 +8,6 @@ export default {
     format: 'iife'
   },
   plugins: [nodeResolve({
-    resolveOnly: ['@cypress/chrome-recorder', '@puppeteer/replay']
-  })]
+    resolveOnly: ['jscodeshift', '@puppeteer/replay']
+  }), commonjs()]
 };

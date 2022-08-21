@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "version": "0.1.0",
-  "name": "Cypress Chrome Recorder",
-  "description": "Cypress extension for DevTools that allows you to export tests directly from the Recorder panel.",
+  "name": "Playwright Chrome Recorder",
+  "description": "Playwright extension for DevTools that allows you to export tests directly from the Recorder panel.",
   "permissions": [],
   "icons": {
     "16": "img/icon_16x16.png",

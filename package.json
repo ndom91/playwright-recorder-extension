@@ -1,0 +1,33 @@
+{
+  "name": "cypress-recorder-extension",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "yarn test",
+    "build": "rsync -a src/*.json build/ && rsync -a src/*.html build/ && rsync -a src/img/*.png build/img/ && rollup --config rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/admah/cypress-recorder-extension.git"
+  },
+  "keywords": [
+    "chrome",
+    "extension",
+    "cypress",
+    "automation"
+  ],
+  "author": "Adam Murray <adamm@cypress.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/admah/cypress-recorder-extension/issues"
+  },
+  "homepage": "https://github.com/admah/cypress-recorder-extension#readme",
+  "dependencies": {
+    "@cypress/chrome-recorder": "^2.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "rollup": "^2.77.2"
+  }
+}

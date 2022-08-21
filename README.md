@@ -1,28 +1,19 @@
-# Cypress Chrome Recorder Extension
-
-> 🔖 **Official Cypress Extension for Chrome DevTools Recorder.** <br/>
-> This project is maintained by the Cypress Team.
-
-<p align="center">
-  <a href="https://cypress.io">
-    <img width="140" alt="Cypress Logo" src="https://raw.githubusercontent.com/cypress-io/cypress/develop/npm/cypress-schematic/src/svgs/built-by-cypress.svg" />
-    </a>
-</p>
+# Chrome DevTools Playwright Exporter Extension
 
 <img width="1009" alt="export-as-cypress" src="https://user-images.githubusercontent.com/5917927/185565270-2f3e9b34-4432-46a3-bafb-0cfe2e53377b.png">
 
 ---
 
-Add [this Chrome Extension](https://chrome.google.com/webstore/detail/cypress-chrome-recorder/fellcphjglholofndfmmjmheedhomgin) to export DevTools Recordings as Cypress Tests directly from the [DevTools Recorder Panel](https://goo.gle/devtools-recorder).
+Add [this Chrome Extension](https://chrome.google.com/webstore/detail/cypress-chrome-recorder/fellcphjglholofndfmmjmheedhomgin) to export DevTools Recordings as Playwright Tests directly from the [DevTools Recorder Panel](https://goo.gle/devtools-recorder).
 
 ## Usage
 
 1. [Create a new recording](https://goo.gle/devtools-recorder#record) via the Recorder panel
 2. Hover over the [export](https://goo.gle/devtools-recorder-eference/#export-flows) icon
-3. Click "Export as a Cypress Test"
-4. Save file as {testName}.cy.{ts.js}
+3. Click "Export as a Playwright Test"
+4. Save file as {testName}.{ts.js}
 
-## Testing
+## Usage
 
 1. Clone the repo
 2. Visit chrome://extensions
@@ -30,5 +21,10 @@ Add [this Chrome Extension](https://chrome.google.com/webstore/detail/cypress-ch
 4. Click "Load unpacked" button in upper left corner
 5. Select the previously cloned directory
 
-# Export in bulk programmatically
-Alternatively, use the [@cypress/chrome-recorder](https://github.com/cypress-io/cypress-chrome-recorder) CLI to export DevTools Recordings as Cypress Tests in bulk programmatically.
+## Thanks
+
+Extension based upon the [Cypress DevTools Recorder](https://github.com/cypress-io/cypress-recorder-extension) and the JSCodeshift from Checkly's [puppeteer-to-playwright](https://github.com/checkly/puppeteer-to-playwright) package.
+
+## License
+
+MIT

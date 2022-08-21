@@ -1,5 +1,5 @@
 {
-  "name": "cypress-recorder-extension",
+  "name": "playwright-recorder-extension",
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
@@ -9,22 +9,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/admah/cypress-recorder-extension.git"
+    "url": "git+https://github.com/ndom91/playwright-recorder-extension.git"
   },
   "keywords": [
     "chrome",
     "extension",
-    "cypress",
+    "playwright",
     "automation"
   ],
-  "author": "Adam Murray <adamm@cypress.io>",
+  "author": "Nico Domino <yo@ndo.dev>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/admah/cypress-recorder-extension/issues"
+    "url": "https://github.com/ndom91/playwright-recorder-extension/issues"
   },
-  "homepage": "https://github.com/admah/cypress-recorder-extension#readme",
+  "homepage": "https://github.com/ndom91/playwright-recorder-extension#readme",
+  "packageManager": "pnpm@7.3.0",
   "dependencies": {
-    "@cypress/chrome-recorder": "^2.0.0"
+    "jscodeshift": "^0.13.1"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.3.0",

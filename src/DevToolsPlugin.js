@@ -1,8 +1,11 @@
-import { cypressStringifyChromeRecording } from '@cypress/chrome-recorder';
+import transformToPlaywright from './transform.js'
 
 export class RecorderPlugin {
   async stringify(recording) {
-    return await cypressStringifyChromeRecording(JSON.stringify(recording));
+    console.log('original reocrding', recording)
+    const playwrightScript = await transformToPlaywright(JSON.stringify(recording));
+    console.log('playwrightScript', playwrightScript)
+    return playwrightScript
   }
 
   // TODO: provide exported step transform function
@@ -14,6 +17,6 @@ export class RecorderPlugin {
 /* eslint-disable no-undef */
 chrome.devtools.recorder.registerRecorderExtensionPlugin(
   new RecorderPlugin(),
-  /* name=*/ 'Cypress Test',
+  /* name=*/ 'Playwright Test',
   /* mediaType=*/ 'application/javascript'
 );
